@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oyt mw terenne hlo</title>
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #F1D3CE;
+        }
+
+        .buttoo {
+            background-color: #EECAD5;
+            border-radius: 15px;
+            width: 40vw;
+            height: 20vh;
+            font-size: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .buttoo:hover {
+            cursor: pointer;
+            animation-name: neto;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes neto {
+            0% {transform: rotate(20deg);}
+            20% {transform: rotate(-20deg);}
+            40% {transform: rotate(20deg);}
+            60% {transform: rotate(-20deg);}
+            100% {transform: rotate(20deg);}
+            
+        }
+    </style>
+</head>
+<body>
+    <button class="buttoo" onclick="Bday()">Click Me</button>
+
+    <script>
+        function Bday(){
+
+            window.location.href = "./bday.html"
+
+
+        }
+    </script>
+</body>
+</html>
